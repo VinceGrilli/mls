@@ -2,10 +2,10 @@ const GetData = () => {
 const myRequest = new Request('https://sparkapi.com/v1/listings', {
   method: 'GET',
   headers: {
-    Authorization: "2kmwmiveety3igk80x83wooq",
+    Authorization: "Bearer 2kmwmiveety3igk80x83wooq",
     Accept: 'application/json',
     //TODO figure out how to pass this header!
-    // X-SparkApi-User-Agent : MyApplication
+    'X-SparkApi-User-Agent' : MyApplication
   }
 })
 
